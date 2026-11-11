@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/library_data.dart';
+import '../models/detail_args.dart';
 import '../models/library_book.dart';
 
 class BookListPage extends StatefulWidget {
@@ -20,6 +21,23 @@ class _BookListPageState extends State<BookListPage> {
     setState(() {
       _visibleCount = (_visibleCount + _pageSize).clamp(0, _books.length);
     });
+  }
+
+  Future<void> _openDetail(int index) async {
+    final result = await Navigator.pushNamed(
+      context,
+      '/detail',
+      arguments: DetailArgs(book: _books[index]),
+    );
+    if (!mounted || result is! DetailResult) return;
+    final target = _books.indexWhere((book) => book.id == result.bookId);
+    if (target == -1) return;
+    setState(() {
+      _books[target] = _books[target].copyWith(read: true);
+    });
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(result.message)));
   }
 
   @override
@@ -64,7 +82,13 @@ class _BookListPageState extends State<BookListPage> {
                       ),
                       title: Text(book.title),
                       subtitle: Text('${book.category} · ${book.author}'),
-                      trailing: Text('${book.borrowCount}次'),
+                      trailing: book.read
+                          ? const Chip(
+                              label: Text('已读'),
+                              visualDensity: VisualDensity.compact,
+                            )
+                          : Text('${book.borrowCount}次'),
+                      onTap: () => _openDetail(index),
                     );
                   },
                 ),

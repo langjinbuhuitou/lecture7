@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'pages/about_page.dart';
 import 'pages/book_list_page.dart';
+import 'pages/detail_page.dart';
 import 'pages/home_page.dart';
 
 void main() {
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const HomePage(),
         '/list': (context) => const BookListPage(),
+        '/detail': (context) => const DetailPage(),
         '/about': (context) => const AboutPage(),
       },
     );
