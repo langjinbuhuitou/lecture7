@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'pages/about_page.dart';
 import 'pages/book_list_page.dart';
+import 'pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF0F766E)),
         useMaterial3: true,
       ),
-      home: const BookListPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/list': (context) => const BookListPage(),
+        '/about': (context) => const AboutPage(),
+      },
     );
   }
 }
