@@ -1,0 +1,11 @@
+# 课程文档与截图（不提交到远程仓库）
+*.docx
+reports/
+progress.md
+
+# Flutter 通用
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages

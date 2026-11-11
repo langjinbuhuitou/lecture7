@@ -1,0 +1,22 @@
+[
+  {"id": 1, "title": "Flutter实战", "author": "亢少军", "category": "计算机", "publisher": "机械工业出版社", "year": 2023, "borrowCount": 86, "summary": "从零开始讲解 Flutter 的布局、状态管理与工程实践，适合作为跨平台开发的入门与进阶读物。"},
+  {"id": 2, "title": "Dart语言程序设计", "author": "李宁", "category": "计算机", "publisher": "人民邮电出版社", "year": 2022, "borrowCount": 54, "summary": "系统介绍 Dart 语法、异步编程与常用库，配合大量示例帮助读者打好语言基础。"},
+  {"id": 3, "title": "算法导论", "author": "Thomas H. Cormen", "category": "计算机", "publisher": "机械工业出版社", "year": 2013, "borrowCount": 71, "summary": "经典的算法教材，覆盖排序、图论、动态规划等内容，理论性强，适合长期翻阅。"},
+  {"id": 4, "title": "深入理解计算机系统", "author": "Randal E. Bryant", "category": "计算机", "publisher": "机械工业出版社", "year": 2016, "borrowCount": 92, "summary": "从程序员视角讲解计算机底层原理，把汇编、内存、链接和并发串成一条完整的线索。"},
+  {"id": 5, "title": "代码整洁之道", "author": "Robert C. Martin", "category": "计算机", "publisher": "人民邮电出版社", "year": 2020, "borrowCount": 63, "summary": "讨论命名、函数、注释与重构等细节，强调写出让人愿意读的代码。"},
+  {"id": 6, "title": "活着", "author": "余华", "category": "文学", "publisher": "作家出版社", "year": 2012, "borrowCount": 120, "summary": "以福贵的一生讲述普通人在时代变迁中的坚韧，语言克制，读来沉重又温暖。"},
+  {"id": 7, "title": "平凡的世界", "author": "路遥", "category": "文学", "publisher": "北京十月文艺出版社", "year": 2017, "borrowCount": 98, "summary": "描写陕北青年在改革年代的奋斗与选择，篇幅很长，但人物非常立体。"},
+  {"id": 8, "title": "围城", "author": "钱锺书", "category": "文学", "publisher": "人民文学出版社", "year": 2016, "borrowCount": 45, "summary": "用讽刺笔法写知识分子的婚姻与生活，比喻密集，常读常新。"},
+  {"id": 9, "title": "白夜行", "author": "东野圭吾", "category": "文学", "publisher": "南海出版公司", "year": 2017, "borrowCount": 77, "summary": "围绕一桩旧案展开的推理小说，两条线索并行推进，结尾令人唏嘘。"},
+  {"id": 10, "title": "人类简史", "author": "尤瓦尔·赫拉利", "category": "历史", "publisher": "中信出版社", "year": 2017, "borrowCount": 88, "summary": "从认知革命讲到科技革命，用宏观视角梳理人类社会的形成与演变。"},
+  {"id": 11, "title": "万历十五年", "author": "黄仁宇", "category": "历史", "publisher": "生活·读书·新知三联书店", "year": 2015, "borrowCount": 41, "summary": "以万历十五年为切面，分析明代政治制度的运行逻辑与困局。"},
+  {"id": 12, "title": "中国通史", "author": "吕思勉", "category": "历史", "publisher": "中华书局", "year": 2019, "borrowCount": 33, "summary": "体例严谨的通史著作，适合对历史脉络有整体兴趣的读者查阅。"},
+  {"id": 13, "title": "枪炮、病菌与钢铁", "author": "贾雷德·戴蒙德", "category": "历史", "publisher": "中信出版社", "year": 2016, "borrowCount": 57, "summary": "从地理与生态条件解释不同文明的差异，观点鲜明，也常引发讨论。"},
+  {"id": 14, "title": "时间简史", "author": "史蒂芬·霍金", "category": "科学", "publisher": "湖南科学技术出版社", "year": 2018, "borrowCount": 74, "summary": "面向普通读者的宇宙学读物，讲黑洞、时间与宇宙起源，语言尽量通俗。"},
+  {"id": 15, "title": "万物简史", "author": "比尔·布莱森", "category": "科学", "publisher": "接力出版社", "year": 2019, "borrowCount": 52, "summary": "用讲故事的方式串起科学发现史，读起来轻松，适合科普入门。"},
+  {"id": 16, "title": "自私的基因", "author": "理查德·道金斯", "category": "科学", "publisher": "中信出版社", "year": 2019, "borrowCount": 38, "summary": "从基因视角解释进化与行为，提出了影响深远的“觅母”概念。"},
+  {"id": 17, "title": "艺术的故事", "author": "贡布里希", "category": "艺术", "publisher": "广西美术出版社", "year": 2015, "borrowCount": 66, "summary": "西方艺术史的经典入门书，图文并茂，按时间顺序梳理风格变化。"},
+  {"id": 18, "title": "设计中的设计", "author": "原研哉", "category": "艺术", "publisher": "山东人民出版社", "year": 2016, "borrowCount": 49, "summary": "从日常物件出发谈设计观念，强调“再设计”与留白的价值。"},
+  {"id": 19, "title": "写给大家看的设计书", "author": "Robin Williams", "category": "艺术", "publisher": "人民邮电出版社", "year": 2017, "borrowCount": 35, "summary": "讲对比、重复、对齐、亲密性四个基本原则，适合做界面的人翻一翻。"},
+  {"id": 20, "title": "西方美术史", "author": "张敢", "category": "艺术", "publisher": "高等教育出版社", "year": 2021, "borrowCount": 28, "summary": "高校美术史教材，结构清晰，配有大量作品图版与背景说明。"}
+]
