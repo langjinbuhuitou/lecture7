@@ -45,6 +45,11 @@ class _ListPageState extends State<ListPage> {
                     title: Text(book.title),
                     subtitle: Text('${book.category} · ${book.author}'),
                     trailing: Text('${book.borrowCount}次'),
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      '/detail',
+                      arguments: book,
+                    ),
                   );
                 },
               ),

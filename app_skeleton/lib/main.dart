@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'pages/detail_page.dart';
+import 'pages/home_page.dart';
 import 'pages/list_page.dart';
 
 void main() {
@@ -18,7 +20,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF2563EB)),
         useMaterial3: true,
       ),
-      home: const ListPage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/list': (context) => const ListPage(),
+        '/detail': (context) => const DetailPage(),
+      },
     );
   }
 }
