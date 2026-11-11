@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../data/library_data.dart';
 import '../models/detail_args.dart';
 import '../models/library_book.dart';
+import '../widgets/book_card.dart';
 
 class BookListPage extends StatefulWidget {
   const BookListPage({super.key});
@@ -75,19 +76,8 @@ class _BookListPageState extends State<BookListPage> {
                   itemCount: books.length,
                   itemBuilder: (context, index) {
                     final book = books[index];
-                    return ListTile(
-                      leading: CircleAvatar(
-                        radius: 16,
-                        child: Text('${book.id}'),
-                      ),
-                      title: Text(book.title),
-                      subtitle: Text('${book.category} · ${book.author}'),
-                      trailing: book.read
-                          ? const Chip(
-                              label: Text('已读'),
-                              visualDensity: VisualDensity.compact,
-                            )
-                          : Text('${book.borrowCount}次'),
+                    return BookCard(
+                      book: book,
                       onTap: () => _openDetail(index),
                     );
                   },

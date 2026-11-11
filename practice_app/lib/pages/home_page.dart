@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/stat_badge.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -37,12 +39,30 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               Row(
-                children: [
-                  _StatItem(label: '藏书', value: '100 本', icon: Icons.menu_book),
-                  const SizedBox(width: 12),
-                  _StatItem(label: '分类', value: '5 类', icon: Icons.category),
-                  const SizedBox(width: 12),
-                  _StatItem(label: '每页', value: '20 条', icon: Icons.view_list),
+                children: const [
+                  Expanded(
+                    child: StatBadge(
+                      label: '藏书',
+                      value: '100 本',
+                      icon: Icons.menu_book,
+                    ),
+                  ),
+                  SizedBox(width: 12),
+                  Expanded(
+                    child: StatBadge(
+                      label: '分类',
+                      value: '5 类',
+                      icon: Icons.category,
+                    ),
+                  ),
+                  SizedBox(width: 12),
+                  Expanded(
+                    child: StatBadge(
+                      label: '每页',
+                      value: '20 条',
+                      icon: Icons.view_list,
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 28),
@@ -59,47 +79,6 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _StatItem extends StatelessWidget {
-  final String label;
-  final String value;
-  final IconData icon;
-
-  const _StatItem({
-    required this.label,
-    required this.value,
-    required this.icon,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-    return Expanded(
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 12),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: theme.colorScheme.outlineVariant),
-        ),
-        child: Column(
-          children: [
-            Icon(icon, color: theme.colorScheme.primary),
-            const SizedBox(height: 8),
-            Text(value, style: theme.textTheme.titleMedium),
-            const SizedBox(height: 2),
-            Text(
-              label,
-              style: TextStyle(
-                fontSize: 12,
-                color: theme.colorScheme.outline,
-              ),
-            ),
-          ],
         ),
       ),
     );
